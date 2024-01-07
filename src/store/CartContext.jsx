@@ -76,7 +76,7 @@ export function CartContextProvider({ children }) {
     dispatchCartAction({type : 'REMOVE_ITEM', id})
   }
 
-  console.log("cartContext",cartContext);
+  // // console.log("cartContext",cartContext);
 
   return <CartContext.Provider value={cartContext}>{children}</CartContext.Provider>;
 }
