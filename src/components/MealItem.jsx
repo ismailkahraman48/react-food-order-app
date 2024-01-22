@@ -4,11 +4,10 @@ import CartContext from "../store/CartContext";
 import { useContext } from "react";
 
 function MealItem({ meal }) {
-  const cartCtx = useContext(CartContext)
+  const cartCtx = useContext(CartContext);
   const handleAddMealToCart = () => {
-    cartCtx.addItem(meal)
-  }
-
+    cartCtx.addItem(meal);
+  };
 
   return (
     <li className="meal-item">
@@ -21,7 +20,7 @@ function MealItem({ meal }) {
           <p className="meal-item-description">{meal.description}</p>
         </div>
         <p className="meal-item-actions ">
-          <Button onClick = {handleAddMealToCart}>Add to Cart</Button>
+          <Button onClick={handleAddMealToCart}>Add to Cart</Button>
         </p>
       </article>
     </li>
