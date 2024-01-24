@@ -7,7 +7,7 @@ function Meals() {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch("http://localhost:3000/meals");
+      const response = await fetch("http://localhost:3002/meals");
       if (!response.ok) {
       }
 
@@ -21,7 +21,7 @@ function Meals() {
   return (
     <ul id="meals">
       {loadedMeals.map((meal) => (
-        <MealItem meal={meal} key={meal.id}/>
+        <MealItem meal={meal} key={meal.id} />
       ))}
     </ul>
   );

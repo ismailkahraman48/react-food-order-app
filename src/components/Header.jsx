@@ -20,11 +20,11 @@ function Header() {
     <header id="main-header">
       <div id="title">
         <img src={logoImg} alt="" />
-        <h1>RaactFood</h1>
+        <h1>React-Food</h1>
       </div>
       <nav>
         <Button textOnly onClick={handleShowCart}>
-          {totalCartItems}
+          Cart : {totalCartItems}
         </Button>
       </nav>
     </header>

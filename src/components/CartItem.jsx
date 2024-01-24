@@ -1,6 +1,6 @@
 import { currencyFormatter } from "../utils/formatting";
 
-function CartItem({ name, quantity, price, onInreace, onDecrease }) {
+function CartItem({ name, quantity, price, onIncrease, onDecrease }) {
   return (
     <li className="cart-item">
       <p>
@@ -9,11 +9,10 @@ function CartItem({ name, quantity, price, onInreace, onDecrease }) {
       <p className="cart-item-actions">
         <button onClick={onDecrease}>-</button>
         <span>{quantity}</span>
-        <button onClick={onInreace}>+</button>
+        <button onClick={onIncrease}>+</button>
       </p>
     </li>
   );
 }
 
 export default CartItem;
-s;
